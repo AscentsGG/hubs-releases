@@ -7,6 +7,15 @@ Every web release of [Hubs](https://thehubs.gg) adds one signed statement here:
 
 Statements are never edited after they are signed. The first is release `20261106T140852Z-a32e3272dec5`.
 
+## App releases
+
+A Mac or Windows release whose encryption library is built from [github.com/AscentsGG/hubs-encryption](https://github.com/AscentsGG/hubs-encryption) adds a signed statement here too, signed with the same key:
+
+- `apps/mac/<version>.json` and `apps/windows/<version>.json` name the release's download and its SHA-256, the commit of hubs-encryption the library was built from, and the library's digests (code digests per architecture for the Mac, the Authenticode digest for Windows).
+- The `.sig` beside each is the Ed25519 signature over its exact bytes, in base64, checked the same way as below.
+
+The first is Hubs for Mac 0.1.69. hubs-encryption's `tools/check-mac-release.sh` rebuilds the library at the named commit and compares it with the release thehubs.gg serves.
+
 The public key, also in `release-signing-key.pem`:
 
 ```
