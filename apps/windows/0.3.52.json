@@ -1,0 +1,21 @@
+{
+  "format": "hubs-app-library/1",
+  "app": "windows",
+  "version": "0.3.52",
+  "build": 264,
+  "releasedAt": "2026-11-08T04:59:36.000Z",
+  "download": {
+    "url": "https://thehubs.gg/downloads/windows-native/0.3.52/Hubs-0.3.52-win-x64.zip",
+    "sha256": "e984d318f411ca70aae64cd38c45e41c6fea77f89572ec6b334e4ca24bb9f859",
+    "bytes": 214934137
+  },
+  "library": {
+    "path": "hubs_mls_ffi.dll",
+    "repository": "https://github.com/AscentsGG/hubs-encryption",
+    "commit": "c716f528a8519f493f2f8ff9c4f82eaea2fe71aa",
+    "rebuild": "rust/hubs-mls-ffi/build-reproducible.ps1",
+    "compare": "rust/hubs-mls-ffi/compare-dll.py",
+    "authenticodeDigest": "9b75a4d4c239390be92fd4e71cb3f07c7b8badf620fa09d977abf6254682288f"
+  },
+  "signedAt": "2026-11-08T05:02:31Z"
+}
