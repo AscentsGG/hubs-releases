@@ -1,0 +1,24 @@
+{
+  "format": "hubs-app-library/1",
+  "app": "mac",
+  "version": "0.1.85",
+  "build": 29905361,
+  "releasedAt": "2026-11-10T15:00:44.000Z",
+  "download": {
+    "url": "https://thehubs.gg/downloads/mac-native/0.1.85/Hubs-0.1.85.zip",
+    "sha256": "d3ecccc8aa366566ca47076a3af3e4c3803e5697bad325f5da19654af982704a",
+    "bytes": 111310318
+  },
+  "library": {
+    "path": "Hubs.app/Contents/Frameworks/HubsMLSFFI.framework/Versions/A/HubsMLSFFI",
+    "repository": "https://github.com/AscentsGG/hubs-encryption",
+    "commit": "ac45b537f0f65a64c01df6f6015e486593523afb",
+    "rebuild": "rust/hubs-mls/build-reproducible.sh",
+    "compare": "rust/hubs-mls/compare-macho.py",
+    "codeDigests": {
+      "arm64": "7b79c574e2b6c8981fc5edd4d417c3be08f55aaeb9fe67df05977bdc2878dd6e",
+      "x86_64": "3abc87b76fee66da778c283c2f285ade25e8231cc9464cb2e52fe603ee672bfb"
+    }
+  },
+  "signedAt": "2026-11-10T15:04:52Z"
+}
